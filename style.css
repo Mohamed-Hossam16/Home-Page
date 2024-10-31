@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+section{
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+main{
+
+    width: 80%;
+    margin: auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+ul li{
+    padding-left: 20px;
+}
+ul li a{
+    color: black;
+    font-size: 20px;
+    border-bottom: 2ps solid rgb(52, 0, 194) ;
+}
+ul li a:hover{
+    color:rgb(52, 0, 194) ;
+}
+button{
+    padding: 12px 30px;
+    background-color: rgb(52, 0, 194);
+    color: white;
+    border-color: rgb(52, 0, 194) ;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.logo h1 a{
+    font-size: 40px;
+    color: black;
+}
+.logo h1 span{
+    color: rgb(52, 0, 194) ;
+}
+.containeer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-evenly;
+}
+.containeer h1{
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.788);
+}
+.containeer h1 span{
+    color:  rgb(52, 0, 194);
+    padding: 20px 0;
+
+}
+.containeer p{
+    color:  rgba(0, 0, 0, 0.795);
+    padding: 20px 0;
+}
+.containeer button{
+    margin: 20px 20px 20px 0;
+    font-size: large;
+}
+.logos a{
+    padding: 10px;
+    border-radius: 50%;
+    background-color:rgb(52, 0, 194) ;
+    border: 2px solid rgb(52, 0, 194);
+    color: white;
+    margin: 50px 20px 50px 0;
+    transition: 1s;
+}
+.logos a:hover{
+    background-color: transparent;
+    color:rgb(52, 0, 194) ;
+}
+.text h1{
+    margin-bottom: 5px;
+}
+button:hover{
+    transform: scale(1.1);
+}
+@media(max-width:950px){
+    nav{
+        flex-direction: column;
+    }
+    .left{
+        width: 90%;
+        justify-content: space-evenly;
+    }
+    .containeer{
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+    main{
+        width: 90%;
+        
+    }
+}
+@media(max-width:650px){
+    .left{
+        flex-direction: column;
+    }
+    .logo h1 a{
+        font-size: 30px;
+    }
+    .left{
+        width: fit-content;
+        justify-content: space-evenly   ;
+    }
+}
